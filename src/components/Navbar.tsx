@@ -18,7 +18,6 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-hospi-600">
               Hospi<span className="text-teal-500">Agent</span>
             </span>
-            <span className="ml-2 text-xs font-medium bg-teal-100 text-teal-800 px-2 py-1 rounded-full hidden sm:inline-block">For New Age Doctors of India</span>
           </a>
         </div>
 
