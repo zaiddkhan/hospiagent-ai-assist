@@ -57,8 +57,8 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-teal-400 mr-2 mt-0.5" />
                 <span className="text-gray-400">
-                  123 Innovation Park<br />
-                  Bangalore, Karnataka 560001
+                  Kamala Mills<br />
+                  Mumbai
                 </span>
               </li>
               <li className="flex items-center">
