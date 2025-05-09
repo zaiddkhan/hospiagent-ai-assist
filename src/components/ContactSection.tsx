@@ -10,20 +10,51 @@ const ContactSection = () => {
   const [specialty, setSpecialty] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // This is your Google Form submission URL
+  // Replace this with your actual Google Form submission URL when you have it
+  const googleFormUrl = 'https://docs.google.com/forms/u/0/d/e/YOUR_FORM_ID_HERE/formResponse';
+
+  // You'll need to map your form field names to Google Form entry IDs
+  // For example, if your Google Form has fields with entry.1234567890 format
+  const nameEntryId = 'entry.1234567890'; // Replace with your actual entry ID
+  const emailEntryId = 'entry.0987654321'; // Replace with your actual entry ID
+  const specialtyEntryId = 'entry.1122334455'; // Replace with your actual entry ID
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Create the form data
+      const formData = new FormData();
+      formData.append(nameEntryId, name);
+      formData.append(emailEntryId, email);
+      formData.append(specialtyEntryId, specialty);
+
+      // To handle CORS issues, we use a no-CORS request
+      // Note: This will not allow you to read the response
+      await fetch(googleFormUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: formData
+      });
+
       toast.success("Thank you for your interest! We'll be in touch soon.", {
         description: "We'll send you information about early access to HospiAgent."
       });
+      
+      // Clear form fields
       setEmail('');
       setName('');
       setSpecialty('');
-    }, 1000);
+    } catch (error) {
+      toast.error("Something went wrong", {
+        description: "Please try again later or contact us directly."
+      });
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
