@@ -25,6 +25,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-700 hover:text-hospi-500 font-medium">Features</a>
           <a href="#agents" className="text-gray-700 hover:text-hospi-500 font-medium">AI Agents</a>
+          <a href="#about" className="text-gray-700 hover:text-hospi-500 font-medium">About Us</a>
           <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium">Benefits</a>
           <Button className="bg-hospi-500 hover:bg-hospi-600">Get Early Access</Button>
         </div>
@@ -46,6 +47,7 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <a href="#features" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>Features</a>
             <a href="#agents" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>AI Agents</a>
+            <a href="#about" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>About Us</a>
             <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>Benefits</a>
             <Button className="bg-hospi-500 hover:bg-hospi-600 w-full">Get Early Access</Button>
           </div>
