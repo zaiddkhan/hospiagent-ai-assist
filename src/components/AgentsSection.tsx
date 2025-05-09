@@ -1,5 +1,5 @@
 
-import { Check, Mic, Calendar, ClipboardList, Activity } from "lucide-react";
+import { Check, Mic, Calendar, ClipboardList, Activity, Heart, Book, Search, Users, Shield, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const agents = [
@@ -50,6 +50,78 @@ const agents = [
       "Visual annotations for review",
       "Confidence level indicators"
     ]
+  },
+  {
+    id: 5,
+    title: "Chronic Care Companion Agent",
+    description: "Monitors diabetic/hypertensive/asthmatic patients, alerts doctor when necessary.",
+    icon: <Heart className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "Connect with glucometers and BP monitors",
+      "Log adherence data and flag anomalies",
+      "Patient reminders and check-ins",
+      "Escalation to doctor when needed"
+    ]
+  },
+  {
+    id: 6,
+    title: "Multilingual Education Agent",
+    description: "Sends post-visit instructions and health education in local languages.",
+    icon: <Book className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "Voice/text instructions in local languages",
+      "Improved treatment adherence",
+      "Delivered via SMS or WhatsApp",
+      "Better understanding for semi-literate populations"
+    ]
+  },
+  {
+    id: 7,
+    title: "Medical Search Agent",
+    description: "Answers real-time clinical questions on drugs, guidelines, protocols.",
+    icon: <Search className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "Instant drug interaction queries",
+      "Access to Indian medical guidelines",
+      "Citations and confidence ranking",
+      "Integrated with mobile apps"
+    ]
+  },
+  {
+    id: 8,
+    title: "Referral Coordination Agent",
+    description: "Manages referrals, creates handoffs, shares summaries, and tracks.",
+    icon: <Users className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "Directory of trusted specialists",
+      "One-click referral summary generator",
+      "Feedback loop integration",
+      "Ensures continuity of care"
+    ]
+  },
+  {
+    id: 9,
+    title: "Audit Compliance Agent",
+    description: "Flags missing documentation, consent forms, malpractice risks.",
+    icon: <Shield className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "Periodic scan of EMR data",
+      "Compliance rule engine",
+      "Risk reports for internal QA teams",
+      "Avoid penalties and lawsuits"
+    ]
+  },
+  {
+    id: 10,
+    title: "Clinical Training Agent",
+    description: "Simulates patient cases, quizzes doctors, and provides feedback.",
+    icon: <GraduationCap className="h-8 w-8 text-hospi-500" />,
+    benefits: [
+      "LLM-powered case simulators",
+      "Branching case paths with feedback",
+      "Performance tracking for students",
+      "Sharpen diagnostic thinking"
+    ]
   }
 ];
 
@@ -66,7 +138,7 @@ const AgentsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {agents.map((agent) => (
             <Card key={agent.id} className="border border-gray-200 rounded-xl overflow-hidden card-hover">
               <CardContent className="p-6">
