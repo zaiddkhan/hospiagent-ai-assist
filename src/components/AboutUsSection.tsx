@@ -1,5 +1,5 @@
 
-import { Award, TrendingUp, Hospital, Doctor, Shield } from "lucide-react";
+import { Award, TrendingUp, Hospital, Shield, Stethoscope } from "lucide-react";
 
 const AboutUsSection = () => {
   return (
@@ -54,7 +54,7 @@ const AboutUsSection = () => {
           <div className="bg-white p-6 rounded-xl shadow-md">
             <div className="flex items-center mb-4">
               <div className="bg-accent rounded-lg p-3 mr-4">
-                <Doctor className="h-6 w-6 text-hospi-500" />
+                <Stethoscope className="h-6 w-6 text-hospi-500" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">Immediate Impact</h3>
             </div>
