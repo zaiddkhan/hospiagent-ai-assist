@@ -18,6 +18,7 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-hospi-600">
               Hospi<span className="text-teal-500">Agent</span>
             </span>
+            <span className="ml-2 text-xs font-medium bg-teal-100 text-teal-800 px-2 py-1 rounded-full hidden sm:inline-block">For New Age Doctors of India</span>
           </a>
         </div>
 
@@ -45,6 +46,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-4 px-5 shadow-md animate-fade-in">
           <div className="flex flex-col space-y-4">
+            <div className="text-xs font-medium bg-teal-100 text-teal-800 px-2 py-1 rounded-full inline-block mb-2 self-start">For New Age Doctors of India</div>
             <a href="#features" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>Features</a>
             <a href="#agents" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>AI Agents</a>
             <a href="#about" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>About Us</a>

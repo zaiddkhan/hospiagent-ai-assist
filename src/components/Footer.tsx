@@ -15,7 +15,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              AI assistants designed specifically for Indian doctors to reduce administrative burden, improve clinical outcomes, and enhance patient care.
+              AI assistants designed specifically for new age doctors of India to reduce administrative burden, improve clinical outcomes, and enhance patient care.
             </p>
           </div>
           
@@ -57,7 +57,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} HospiAgent. All rights reserved.
+            &copy; {new Date().getFullYear()} HospiAgent. All rights reserved. | For New Age Doctors of India
           </p>
         </div>
       </div>

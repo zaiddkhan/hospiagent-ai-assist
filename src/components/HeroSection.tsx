@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              AI Assistants for <span className="text-hospi-600">Indian Doctors</span>
+              AI Assistants for <span className="text-hospi-600">New Age Doctors of India</span>
             </h1>
             <p className="text-xl text-gray-700">
               Reduce your admin burden, improve clinical accuracy, and spend more time with patients using our suite of specialized AI agents.
@@ -23,7 +23,7 @@ const HeroSection = () => {
             </div>
             <div className="pt-4">
               <p className="text-gray-500 text-sm">
-                ⚡ Trusted by 200+ doctors across India
+                ⚡ Trusted by 200+ new age doctors across India
               </p>
             </div>
           </div>
@@ -35,7 +35,7 @@ const HeroSection = () => {
               <div className="relative">
                 <img
                   src="https://img.freepik.com/free-vector/doctors-concept-illustration_114360-1515.jpg"
-                  alt="Indian Doctor with AI Assistant"
+                  alt="New Age Indian Doctor with AI Assistant"
                   className="rounded-xl shadow-lg object-cover"
                 />
               </div>
