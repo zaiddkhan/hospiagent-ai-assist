@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              AI Assistants for <span className="text-hospi-600">New Age Doctors of India</span>
+              AI Agents for <span className="text-hospi-600">New Age Doctors and Healthcare Professionals</span>
             </h1>
             <p className="text-xl text-gray-700">
               Reduce your admin burden, improve clinical accuracy, and spend more time with patients using our suite of specialized AI agents.
