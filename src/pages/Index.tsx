@@ -7,24 +7,21 @@ import AboutUsSection from "@/components/AboutUsSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import { FormSubmissionsProvider } from "@/context/FormSubmissionsContext";
 
 const Index = () => {
   return (
-    <FormSubmissionsProvider>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <HeroSection />
-          <FeaturesSection />
-          <AgentsSection />
-          <AboutUsSection />
-          <BenefitsSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </FormSubmissionsProvider>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow">
+        <HeroSection />
+        <FeaturesSection />
+        <AgentsSection />
+        <AboutUsSection />
+        <BenefitsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 

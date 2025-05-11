@@ -1,13 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import { useFormSubmissions } from '@/context/FormSubmissionsContext';
-import { DemoSheet } from '@/components/DemoSheet';
 
 const HeroSection = () => {
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const { formSubmissions } = useFormSubmissions();
-
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -56,13 +50,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-
-      {/* Demo Sheet */}
-      <DemoSheet 
-        isOpen={isSheetOpen}
-        onClose={() => setIsSheetOpen(false)}
-        formSubmissions={formSubmissions}
-      />
     </div>
   );
 };
