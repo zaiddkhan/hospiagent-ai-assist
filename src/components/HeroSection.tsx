@@ -1,9 +1,12 @@
 
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useFormSubmissions } from '@/context/FormSubmissionsContext';
+import { DemoSheet } from '@/components/DemoSheet';
 
 const HeroSection = () => {
-  const navigate = useNavigate();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const { formSubmissions } = useFormSubmissions();
 
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -13,11 +16,7 @@ const HeroSection = () => {
   };
 
   const openDemoModal = () => {
-    // Scroll to contact section for now since we don't have a separate demo modal yet
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    setIsSheetOpen(true);
   };
 
   return (
@@ -68,6 +67,13 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Demo Sheet */}
+      <DemoSheet 
+        isOpen={isSheetOpen}
+        onClose={() => setIsSheetOpen(false)}
+        formSubmissions={formSubmissions}
+      />
     </div>
   );
 };

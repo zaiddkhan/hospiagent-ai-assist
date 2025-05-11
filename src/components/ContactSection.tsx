@@ -14,6 +14,7 @@ import {
   FormLabel,
   FormMessage
 } from "@/components/ui/form";
+import { useFormSubmissions } from '@/context/FormSubmissionsContext';
 
 // Form schema for validation
 const formSchema = z.object({
@@ -26,6 +27,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const { addSubmission } = useFormSubmissions();
 
   // Initialize form with react-hook-form and zod validation
   const form = useForm<FormValues>({
@@ -41,9 +43,8 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Since we don't have a real backend yet, we'll simulate a successful submission
-      // In a real application, you would send this data to your backend API
-      console.log("Form data submitted:", values);
+      // Store the submission in our context
+      addSubmission(values);
       
       // Simulate network delay
       await new Promise(resolve => setTimeout(resolve, 1000));
