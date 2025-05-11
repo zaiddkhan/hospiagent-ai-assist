@@ -27,9 +27,8 @@ const ContactSection = () => {
             </div>
           )}
           
-          {/* Replace this URL with your actual Google Form embed URL */}
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfCMu7SiDyfB5Z0fGBCGDTjL-JKL-HgzB5bhTGgXq40EvUW_g/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfO4pIwXt8XhDD48YcyOac9bLDv9enCVAnrTVgQ9D1zutrw7g/viewform?embedded=true"
             width="100%"
             height="720"
             frameBorder="0"
