@@ -134,7 +134,7 @@ const AgentsSection = () => {
             Our Physician Productivity Tools
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Purpose-built AI assistants designed to enhance productivity and efficiency. All tools emphasize that final decisions always rest with the healthcare provider.
+            Purpose-built AI agents designed to enhance productivity and efficiency. All tools emphasize that final decisions always rest with the healthcare provider.
           </p>
         </div>
 

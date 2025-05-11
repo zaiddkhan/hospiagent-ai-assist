@@ -15,7 +15,7 @@ const benefits = [
   {
     icon: <ShieldCheck className="h-10 w-10 text-teal-500" />,
     title: "Reduce Medical Errors",
-    description: "Minimize documentation errors and oversights with AI assistants designed to catch discrepancies."
+    description: "Minimize documentation errors and oversights with AI agents designed to catch discrepancies."
   }
 ];
 
@@ -28,7 +28,7 @@ const BenefitsSection = () => {
             How HospiAgent Helps
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our AI assistants are designed to address the unique challenges faced by Indian healthcare providers.
+            Our AI agents are designed to address the unique challenges faced by Indian healthcare providers.
           </p>
         </div>
 
