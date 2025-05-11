@@ -17,14 +17,14 @@ const ContactSection = () => {
             Get Early Access
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Join our waiting list to be among the first to experience HospiAgent's AI assistants.
+            Join our waiting list to be among the first to experience HospiAgent's AI agents.
           </p>
           
           <Button 
             className="bg-hospi-500 hover:bg-hospi-600 h-12 px-8 text-base"
             onClick={openGoogleForm}
           >
-            Open Registration Form <ExternalLink className="ml-1" size={16} />
+            Get Early Access <ExternalLink className="ml-1" size={16} />
           </Button>
         </div>
       </div>
