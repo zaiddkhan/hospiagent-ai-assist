@@ -1,20 +1,18 @@
 
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ExternalLink } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfO4pIwXt8XhDD48YcyOac9bLDv9enCVAnrTVgQ9D1zutrw7g/viewform";
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openEarlyAccess = () => {
+    window.open(googleFormUrl, '_blank');
     // Close mobile menu if open
     if (isMenuOpen) {
       setIsMenuOpen(false);
@@ -40,9 +38,9 @@ const Navbar = () => {
           <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium">Benefits</a>
           <Button 
             className="bg-hospi-500 hover:bg-hospi-600"
-            onClick={scrollToContact}
+            onClick={openEarlyAccess}
           >
-            Get Early Access
+            Get Early Access <ExternalLink className="ml-1" size={16} />
           </Button>
         </div>
 
@@ -68,9 +66,9 @@ const Navbar = () => {
             <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>Benefits</a>
             <Button 
               className="bg-hospi-500 hover:bg-hospi-600 w-full"
-              onClick={scrollToContact}
+              onClick={openEarlyAccess}
             >
-              Get Early Access
+              Get Early Access <ExternalLink className="ml-1" size={16} />
             </Button>
           </div>
         </div>

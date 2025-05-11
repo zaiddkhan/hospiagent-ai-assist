@@ -1,13 +1,9 @@
 
 import { Button } from "@/components/ui/button";
+import { ExternalLink } from "lucide-react";
 
 const HeroSection = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfO4pIwXt8XhDD48YcyOac9bLDv9enCVAnrTVgQ9D1zutrw7g/viewform";
 
   return (
     <div className="bg-gradient-to-br from-white to-accent py-16 md:py-24">
@@ -23,9 +19,9 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 className="bg-hospi-500 hover:bg-hospi-600 h-12 px-8 text-base"
-                onClick={scrollToContact}
+                onClick={() => window.open(googleFormUrl, '_blank')}
               >
-                Get Early Access
+                Get Early Access <ExternalLink className="ml-1" size={16} />
               </Button>
             </div>
             <div className="pt-4">
