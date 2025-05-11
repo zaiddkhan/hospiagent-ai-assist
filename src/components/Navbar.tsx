@@ -10,6 +10,17 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    // Close mobile menu if open
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <nav className="py-4 bg-white shadow-sm sticky top-0 z-50">
       <div className="container-custom flex justify-between items-center">
@@ -27,7 +38,12 @@ const Navbar = () => {
           <a href="#agents" className="text-gray-700 hover:text-hospi-500 font-medium">AI Agents</a>
           <a href="#about" className="text-gray-700 hover:text-hospi-500 font-medium">About Us</a>
           <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium">Benefits</a>
-          <Button className="bg-hospi-500 hover:bg-hospi-600">Get Early Access</Button>
+          <Button 
+            className="bg-hospi-500 hover:bg-hospi-600"
+            onClick={scrollToContact}
+          >
+            Get Early Access
+          </Button>
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -50,7 +66,12 @@ const Navbar = () => {
             <a href="#agents" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>AI Agents</a>
             <a href="#about" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>About Us</a>
             <a href="#benefits" className="text-gray-700 hover:text-hospi-500 font-medium py-2" onClick={toggleMenu}>Benefits</a>
-            <Button className="bg-hospi-500 hover:bg-hospi-600 w-full">Get Early Access</Button>
+            <Button 
+              className="bg-hospi-500 hover:bg-hospi-600 w-full"
+              onClick={scrollToContact}
+            >
+              Get Early Access
+            </Button>
           </div>
         </div>
       )}

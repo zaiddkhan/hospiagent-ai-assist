@@ -1,7 +1,25 @@
 
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const openDemoModal = () => {
+    // Scroll to contact section for now since we don't have a separate demo modal yet
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-gradient-to-br from-white to-accent py-16 md:py-24">
       <div className="container-custom">
@@ -14,10 +32,17 @@ const HeroSection = () => {
               Reduce your admin burden, improve clinical accuracy, and spend more time with patients using our suite of specialized AI agents.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-hospi-500 hover:bg-hospi-600 h-12 px-8 text-base">
+              <Button 
+                className="bg-hospi-500 hover:bg-hospi-600 h-12 px-8 text-base"
+                onClick={scrollToContact}
+              >
                 Get Early Access
               </Button>
-              <Button variant="outline" className="border-hospi-500 text-hospi-600 h-12 px-8 text-base">
+              <Button 
+                variant="outline" 
+                className="border-hospi-500 text-hospi-600 h-12 px-8 text-base"
+                onClick={openDemoModal}
+              >
                 Book Demo
               </Button>
             </div>
