@@ -15,10 +15,6 @@ const HeroSection = () => {
     }
   };
 
-  const openDemoModal = () => {
-    setIsSheetOpen(true);
-  };
-
   return (
     <div className="bg-gradient-to-br from-white to-accent py-16 md:py-24">
       <div className="container-custom">
@@ -36,13 +32,6 @@ const HeroSection = () => {
                 onClick={scrollToContact}
               >
                 Get Early Access
-              </Button>
-              <Button 
-                variant="outline" 
-                className="border-hospi-500 text-hospi-600 h-12 px-8 text-base"
-                onClick={openDemoModal}
-              >
-                Book Demo
               </Button>
             </div>
             <div className="pt-4">
