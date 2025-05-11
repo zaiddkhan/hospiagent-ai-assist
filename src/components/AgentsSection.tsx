@@ -18,7 +18,7 @@ const agents = [
   {
     id: 2,
     title: "Practice Manager Agent",
-    description: "Automates appointments, billing, follow-ups, referrals, and inventory.",
+    description: "Automates appointments, billing, follow-ups, referrals, and inventory management.",
     icon: <Calendar className="h-8 w-8 text-hospi-500" />,
     benefits: [
       "WhatsApp integration for patient bookings",
@@ -30,7 +30,7 @@ const agents = [
   {
     id: 3,
     title: "Triage Assistant Agent",
-    description: "Collects symptoms pre-consult, flags urgency, prepares doctor.",
+    description: "Collects symptoms pre-consult, flags urgency levels, prepares doctor briefings.",
     icon: <ClipboardList className="h-8 w-8 text-hospi-500" />,
     benefits: [
       "Pre-visit symptom collection",
@@ -41,7 +41,7 @@ const agents = [
   },
   {
     id: 4,
-    title: "Clinical Image Organizer",
+    title: "Clinical Image Organizer Agent",
     description: "Enhances and organizes medical images without offering interpretations or diagnoses.",
     icon: <Activity className="h-8 w-8 text-hospi-500" />,
     benefits: [
@@ -53,7 +53,7 @@ const agents = [
   },
   {
     id: 5,
-    title: "Patient Communication Tool",
+    title: "Patient Communication Agent",
     description: "Collects and displays patient-reported data without clinical interpretations.",
     icon: <Heart className="h-8 w-8 text-hospi-500" />,
     benefits: [
@@ -77,7 +77,7 @@ const agents = [
   },
   {
     id: 7,
-    title: "Medical Reference Tool",
+    title: "Medical Reference Agent",
     description: "Provides access to published guidelines without suggesting specific treatments.",
     icon: <Search className="h-8 w-8 text-hospi-500" />,
     benefits: [
@@ -90,7 +90,7 @@ const agents = [
   {
     id: 8,
     title: "Referral Coordination Agent",
-    description: "Manages referrals, creates handoffs, shares summaries, and tracks.",
+    description: "Manages referrals, creates handoffs, shares summaries, and tracks progress.",
     icon: <Users className="h-8 w-8 text-hospi-500" />,
     benefits: [
       "Directory of trusted specialists",
@@ -102,7 +102,7 @@ const agents = [
   {
     id: 9,
     title: "Audit Compliance Agent",
-    description: "Flags missing documentation, consent forms, malpractice risks.",
+    description: "Flags missing documentation, consent forms, and potential malpractice risks.",
     icon: <Shield className="h-8 w-8 text-hospi-500" />,
     benefits: [
       "Periodic scan of EMR data",
@@ -114,7 +114,7 @@ const agents = [
   {
     id: 10,
     title: "Clinical Training Agent",
-    description: "Simulates patient cases, quizzes doctors, and provides feedback.",
+    description: "Simulates patient cases, quizzes doctors, and provides educational feedback.",
     icon: <GraduationCap className="h-8 w-8 text-hospi-500" />,
     benefits: [
       "LLM-powered case simulators",
@@ -131,7 +131,7 @@ const AgentsSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Our Physician Productivity Tools
+            Our Physician Productivity Agents
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Purpose-built AI agents designed to enhance productivity and efficiency. All tools emphasize that final decisions always rest with the healthcare provider.

@@ -5,12 +5,12 @@ const benefits = [
   {
     icon: <Clock className="h-10 w-10 text-teal-500" />,
     title: "Save Precious Time",
-    description: "Eliminate hours of documentation and administrative work every day with AI-powered automation."
+    description: "Eliminate hours of documentation and administrative work every day with AI-powered agents."
   },
   {
     icon: <TrendingUp className="h-10 w-10 text-teal-500" />,
     title: "Improve Clinical Outcomes",
-    description: "Make better-informed decisions with AI that helps analyze data and spotlights critical information."
+    description: "Make better-informed decisions with AI agents that help analyze data and spotlight critical information."
   },
   {
     icon: <ShieldCheck className="h-10 w-10 text-teal-500" />,

@@ -14,7 +14,7 @@ const HeroSection = () => {
               AI Agents for <span className="text-hospi-600">New Age Doctors and Healthcare Professionals</span>
             </h1>
             <p className="text-xl text-gray-700">
-              Reduce your admin burden, improve clinical accuracy, and spend more time with patients using our suite of specialized AI agents.
+              Reduce your administrative burden, improve clinical workflows, and spend more quality time with patients using our specialized AI agents.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
@@ -38,7 +38,7 @@ const HeroSection = () => {
               <div className="relative">
                 <img
                   src="https://img.freepik.com/free-vector/doctors-concept-illustration_114360-1515.jpg"
-                  alt="New Age Indian Doctor with AI Assistant"
+                  alt="New Age Indian Doctor with AI Agent"
                   className="rounded-xl shadow-lg object-cover"
                 />
               </div>

@@ -5,7 +5,7 @@ const features = [
   {
     icon: <Clock className="h-6 w-6 text-hospi-500" />,
     title: "Save Hours Daily",
-    description: "AI assistants automate documentation and admin tasks, saving new age doctors 2-3 hours every day."
+    description: "AI agents automate documentation and administrative tasks, saving new age doctors 2-3 hours every day."
   },
   {
     icon: <ShieldCheck className="h-6 w-6 text-hospi-500" />,
@@ -34,7 +34,7 @@ const FeaturesSection = () => {
               Designed Specifically for New Age Indian Doctors
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              HospiAgent's AI assistants understand the unique challenges facing new age doctors in India - high patient volumes, multilingual needs, digital adoption, and limited resources.
+              HospiAgent's AI agents understand the unique challenges facing new age doctors in India - high patient volumes, multilingual needs, digital adoption, and limited resources.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
             <div className="absolute -z-10 bottom-1/4 right-1/4 w-1/2 h-1/2 bg-hospi-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
             <img 
               src="https://img.freepik.com/free-vector/hospital-reception-concept-illustration_114360-8554.jpg" 
-              alt="New age Indian doctor using AI assistant"
+              alt="New age Indian doctor using AI agent"
               className="rounded-xl shadow-lg w-full"
             />
           </div>

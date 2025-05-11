@@ -17,7 +17,7 @@ const ContactSection = () => {
             Get Early Access
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Join our waiting list to be among the first to experience HospiAgent's AI agents.
+            Join our waiting list to be among the first to experience HospiAgent's AI agents for healthcare.
           </p>
           
           <Button 
