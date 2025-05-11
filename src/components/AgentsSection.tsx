@@ -5,14 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 const agents = [
   {
     id: 1,
-    title: "Clinical Scribe Agent",
-    description: "Converts doctor-patient conversations into structured notes, prescriptions, and diagnosis codes.",
+    title: "Documentation Agent",
+    description: "Transcribes doctor-patient conversations into structured notes without clinical suggestions.",
     icon: <Mic className="h-8 w-8 text-hospi-500" />,
     benefits: [
-      "Save 2-3 hours daily on documentation",
-      "Generate SOAP notes automatically",
-      "Accurate ICD codes and EMR integration",
-      "Review and approve before finalizing"
+      "Save 2-3 hours daily on administrative work",
+      "Generate structured documentation efficiently",
+      "Purely administrative with no clinical suggestions",
+      "Review and approve all content before finalizing"
     ]
   },
   {
@@ -41,26 +41,26 @@ const agents = [
   },
   {
     id: 4,
-    title: "Diagnostic Support Agent",
-    description: "Interprets imaging, labs, ECGs, and flags probable diagnoses.",
+    title: "Clinical Image Organizer",
+    description: "Enhances and organizes medical images without offering interpretations or diagnoses.",
     icon: <Activity className="h-8 w-8 text-hospi-500" />,
     benefits: [
-      "X-ray and ECG interpretation assistance",
-      "Lab result analysis and flagging",
-      "Visual annotations for review",
-      "Confidence level indicators"
+      "Image enhancement for better visibility",
+      "Organized storage and retrieval of images",
+      "Highlights areas for physician attention",
+      "No diagnostic interpretations provided"
     ]
   },
   {
     id: 5,
-    title: "Chronic Care Companion Agent",
-    description: "Monitors diabetic/hypertensive/asthmatic patients, alerts doctor when necessary.",
+    title: "Patient Communication Tool",
+    description: "Collects and displays patient-reported data without clinical interpretations.",
     icon: <Heart className="h-8 w-8 text-hospi-500" />,
     benefits: [
-      "Connect with glucometers and BP monitors",
-      "Log adherence data and flag anomalies",
-      "Patient reminders and check-ins",
-      "Escalation to doctor when needed"
+      "Connect with patient monitoring devices",
+      "Display patient-reported data clearly",
+      "Facilitate communication between visits",
+      "No automated clinical interpretations"
     ]
   },
   {
@@ -77,14 +77,14 @@ const agents = [
   },
   {
     id: 7,
-    title: "Medical Search Agent",
-    description: "Answers real-time clinical questions on drugs, guidelines, protocols.",
+    title: "Medical Reference Tool",
+    description: "Provides access to published guidelines without suggesting specific treatments.",
     icon: <Search className="h-8 w-8 text-hospi-500" />,
     benefits: [
-      "Instant drug interaction queries",
-      "Access to Indian medical guidelines",
-      "Citations and confidence ranking",
-      "Integrated with mobile apps"
+      "Access to established medical guidelines",
+      "Literature references with citations",
+      "No patient-specific treatment suggestions",
+      "All final decisions rest with the provider"
     ]
   },
   {
@@ -131,10 +131,10 @@ const AgentsSection = () => {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Our AI Agents
+            Our Physician Productivity Tools
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Purpose-built AI assistants designed specifically for the needs and workflows of Indian healthcare practitioners.
+            Purpose-built AI assistants designed to enhance productivity and efficiency. All tools emphasize that final decisions always rest with the healthcare provider.
           </p>
         </div>
 
