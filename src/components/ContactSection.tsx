@@ -44,7 +44,12 @@ const ContactSection = () => {
     
     try {
       // Store the submission in our context
-      addSubmission(values);
+      // Explicitly passing the values as required fields to match the expected type
+      addSubmission({
+        name: values.name,
+        email: values.email,
+        specialty: values.specialty
+      });
       
       // Simulate network delay
       await new Promise(resolve => setTimeout(resolve, 1000));
