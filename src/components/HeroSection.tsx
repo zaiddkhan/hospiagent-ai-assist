@@ -24,11 +24,6 @@ const HeroSection = () => {
                 Get Early Access <ExternalLink className="ml-1" size={16} />
               </Button>
             </div>
-            <div className="pt-4">
-              <p className="text-gray-500 text-sm">
-                ⚡ Trusted by 200+ new age doctors across India
-              </p>
-            </div>
           </div>
           
           <div className="flex justify-center lg:justify-end animate-fade-in">
