@@ -39,30 +39,30 @@ const agents = [
       "Improved consultation efficiency"
     ]
   },
-  {
-    id: 4,
-    title: "Clinical Image Organizer Agent",
-    description: "Enhances and organizes medical images without offering interpretations or diagnoses.",
-    icon: <Activity className="h-8 w-8 text-hospi-500" />,
-    benefits: [
-      "Image enhancement for better visibility",
-      "Organized storage and retrieval of images",
-      "Highlights areas for physician attention",
-      "No diagnostic interpretations provided"
-    ]
-  },
-  {
-    id: 5,
-    title: "Patient Communication Agent",
-    description: "Collects and displays patient-reported data without clinical interpretations.",
-    icon: <Heart className="h-8 w-8 text-hospi-500" />,
-    benefits: [
-      "Connect with patient monitoring devices",
-      "Display patient-reported data clearly",
-      "Facilitate communication between visits",
-      "No automated clinical interpretations"
-    ]
-  },
+  // {
+  //   id: 4,
+  //   title: "Clinical Image Organizer Agent",
+  //   description: "Enhances and organizes medical images without offering interpretations or diagnoses.",
+  //   icon: <Activity className="h-8 w-8 text-hospi-500" />,
+  //   benefits: [
+  //     "Image enhancement for better visibility",
+  //     "Organized storage and retrieval of images",
+  //     "Highlights areas for physician attention",
+  //     "No diagnostic interpretations provided"
+  //   ]
+  // },
+  // {
+  //   id: 5,
+  //   title: "Patient Communication Agent",
+  //   description: "Collects and displays patient-reported data without clinical interpretations.",
+  //   icon: <Heart className="h-8 w-8 text-hospi-500" />,
+  //   benefits: [
+  //     "Connect with patient monitoring devices",
+  //     "Display patient-reported data clearly",
+  //     "Facilitate communication between visits",
+  //     "No automated clinical interpretations"
+  //   ]
+  // },
   {
     id: 6,
     title: "Multilingual Education Agent",
@@ -87,30 +87,30 @@ const agents = [
       "All final decisions rest with the provider"
     ]
   },
-  {
-    id: 8,
-    title: "Referral Coordination Agent",
-    description: "Manages referrals, creates handoffs, shares summaries, and tracks progress.",
-    icon: <Users className="h-8 w-8 text-hospi-500" />,
-    benefits: [
-      "Directory of trusted specialists",
-      "One-click referral summary generator",
-      "Feedback loop integration",
-      "Ensures continuity of care"
-    ]
-  },
-  {
-    id: 9,
-    title: "Audit Compliance Agent",
-    description: "Flags missing documentation, consent forms, and potential malpractice risks.",
-    icon: <Shield className="h-8 w-8 text-hospi-500" />,
-    benefits: [
-      "Periodic scan of EMR data",
-      "Compliance rule engine",
-      "Risk reports for internal QA teams",
-      "Avoid penalties and lawsuits"
-    ]
-  },
+  // {
+  //   id: 8,
+  //   title: "Referral Coordination Agent",
+  //   description: "Manages referrals, creates handoffs, shares summaries, and tracks progress.",
+  //   icon: <Users className="h-8 w-8 text-hospi-500" />,
+  //   benefits: [
+  //     "Directory of trusted specialists",
+  //     "One-click referral summary generator",
+  //     "Feedback loop integration",
+  //     "Ensures continuity of care"
+  //   ]
+  // },
+  // {
+  //   id: 9,
+  //   title: "Audit Compliance Agent",
+  //   description: "Flags missing documentation, consent forms, and potential malpractice risks.",
+  //   icon: <Shield className="h-8 w-8 text-hospi-500" />,
+  //   benefits: [
+  //     "Periodic scan of EMR data",
+  //     "Compliance rule engine",
+  //     "Risk reports for internal QA teams",
+  //     "Avoid penalties and lawsuits"
+  //   ]
+  // },
   {
     id: 10,
     title: "Clinical Training Agent",
