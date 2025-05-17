@@ -13,6 +13,9 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               AI Agents for <span className="text-hospi-600">New Age Doctors and Healthcare Professionals</span>
             </h1>
+            <p className="text-xl text-teal-600 font-medium italic">
+              Using AI agents to make Indian healthcare more consumer friendly
+            </p>
             <p className="text-xl text-gray-700">
               Reduce your administrative burden, improve clinical workflows, and spend more quality time with patients using our specialized AI agents.
             </p>
