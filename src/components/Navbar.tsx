@@ -63,13 +63,6 @@ const Navbar = () => {
             Demo <ExternalLink className="ml-1" size={16} />
           </Button>
           <Button 
-            variant="outline"
-            className="border-hospi-500 text-hospi-600 hover:bg-hospi-50" 
-            onClick={openNewDemo}
-          >
-            New Demo of Scribe Agent<ExternalLink className="ml-1" size={16} />
-          </Button>
-          <Button 
             className="bg-hospi-500 hover:bg-hospi-600"
             onClick={openEarlyAccess}
           >
